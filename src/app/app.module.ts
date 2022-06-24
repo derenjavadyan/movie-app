@@ -12,6 +12,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemsBannerComponent } from './components/items-banner/items-banner.component';
 import { ItemComponent } from './components/item/item.component';
+import { MovieComponent } from './pages/movie/movie.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ItemComponent } from './components/item/item.component';
     MoviesComponent,
     SliderComponent,
     ItemsBannerComponent,
-    ItemComponent
+    ItemComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
