@@ -8,14 +8,11 @@ import { IMAGES_SIZES } from '../../constants/images-sizes';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-
-  @Input() itemData: Movie | null = null;
+  @Input() itemData!: Movie;
 
   imagesSizes = IMAGES_SIZES;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
