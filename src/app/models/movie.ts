@@ -1,3 +1,10 @@
+export interface MovieDto {
+  page: number;
+  results: Movie[];
+  total_results: number;
+  total_pages: number;
+}
+
 export interface Movie {
   adult: boolean;
   backdrop_path: string;
@@ -13,11 +20,13 @@ export interface Movie {
   video: false;
   vote_average: number;
   vote_count: number;
+  revenue: number;
+  runtime: number;
+  status: string;
+  genres: Genre[];
 }
 
-export interface MovieDto {
-  page: number;
-  results: Movie[];
-  total_results: number;
-  total_pages: number;
+export interface Genre {
+  id: number;
+  name: string;
 }
