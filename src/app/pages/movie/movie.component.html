@@ -49,4 +49,12 @@
       </div>
     </div>
   </div>
+
+  <div class="grid">
+    <ng-container *ngFor="let movieVideo of movieVideos">
+      <div class="col-12 md:col-4 lg:col-4">
+        <video-embed [site]="movieVideo.site" [key]="movieVideo.key"></video-embed>
+      </div>
+    </ng-container>
+  </div>
 </div>
